@@ -19,6 +19,9 @@ public:
 private slots:
     void on_pushButton_clicked();
     void write_output();
+    void write_error();
+    void command_finished(int exitCode, QProcess::ExitStatus exitStatus);
+
 
 private:
     Ui::Commander *ui;
